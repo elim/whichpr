@@ -59,7 +59,7 @@ func TestIsParent_whenNotEq(t *testing.T) {
 			git tag 1br
 			git commit --no-gpg-sign --allow-empty -m 'bar'
 			git tag 2br
-			git checkout master
+			git checkout -
 			git commit --no-gpg-sign --allow-empty -m 'baz'
 			git tag 1master
 			git commit --no-gpg-sign --allow-empty -m 'piyo'
